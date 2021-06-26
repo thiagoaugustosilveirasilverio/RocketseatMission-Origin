@@ -1,33 +1,47 @@
 <!DOCTYPE html>
 <html lang="pt_BR">
 <head>
+    <!--Page Info-->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Styles-->
     <link rel="stylesheet" href="style.css">
     <!--Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=
 Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!--Icones-->
+    <link rel="stylesheet" href="assets/fonts/style.css">
     <title>OriginSix</title>
    
 </head>
 <body>
-    <header id="header">
+    <header id="header" class="scroll">
 
-        <nav class="container">
+        <nav class="container ">
             <a class="logo" href="#">Beauty<span>Salon</span> </a>
-            
+            <!--Menu-->
             <div class="menu">
-                ...
-            </div>
+                <ul class="grid">
+                    <li><a class="title" href="#home">Início</a></li>
+                    <li><a class="title" href="#about">Sobre</a></li>
+                    <li><a class="title" href="#services">Serviços</a></li>
+                    <li><a class="title" href="#testimonials">Depoimentos</a></li>
+                    <li><a class="title" href="#contact">Contato</a></li>
+                </ul>
+            </div><!--Menu-->
+            <div class="toggle icon-menu"></div>
+            <div class="toggle icon-x"></div>
         </nav>
 
        
     </header>
     
     <main>
+        <!--Home-->
         <section class="section" id="home">
             <div class="container grid">
 
@@ -40,7 +54,7 @@ Poppins:wght@400;500;700&display=swap" rel="stylesheet">
                </div>
     
          <div class="text">
-            <h1>Saúde natural para os seus cabelos</h1>
+            <h2 class="title">Saúde natural para os seus cabelos</h2>
             <p>
                 Um salão exclusivo em São Paulo, especializado em tratamentos naturais.
             </p>
@@ -50,14 +64,75 @@ Poppins:wght@400;500;700&display=swap" rel="stylesheet">
         </section>
 
         <div class="divider-1">
-            
-        </div>
-        <section class="section">
-            <div class="container">
 
-            </div>
-        </section>
+        </div>
+        <!--Home-->
+       <section class="section" id="about">
+           <div class="container grid">
+               <div class="image">
+                   <img src="https://images.unsplash.com/photo-1559599101-f09722fb4948?ixid=
+                   MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aGFpcmRyZXNzZXJ8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto
+                   =format&fit=crop&w=500&q=60" alt="3 cabeleiras sorrindo do salão de beleza Beaty Salom, sendo a primeira
+                   da esquerda para direita a primeira está segurando uma escova de cabelo e outra escova de cabelo no bolso 
+                   da calça jeans, a segunda uma tesoura aberta frente 
+                   ao seu rosto e a terceira com uma tesoura e uma escova de cabelos uma em cada mão.">
+               </div>
+               <div class="text">
+                   <h2 class="title">Sobre Nós</h2>
+                   <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                       Excepturi nulla corporis perspiciatis quisquam officia reiciendis 
+                       sequi nostrum, at repellat quo expedita quidem illo hic placeat, ut, 
+                       ab in facilis accusamus?</p>
+                       <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur,
+                            a. Voluptate earum non, reprehenderit quidem iusto eaque aliquid 
+                            dignissimos cumque libero minus, hic unde harum alias vitae, 
+                           asperiores impedit ratione.</p>
+                           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex in
+                                nihil blanditiis maiores corporis veniam magnam eos mollitia
+                                 dolorem quos ad voluptas numquam, quod dolorum tenetur enim 
+                                 ut iusto neque.</p>
+               </div>
+           </div>
+       </section>
+
+       <div class="divider-2"> </div>
+
+       <section class="section" id="services">
+           <div class="container grid">
+               <header>
+                   <h2 class="title">Serviços</h2>
+                   <p>
+                       Com mais de 10 anos no mercado, o <strong>BeautySalon</strong> já conquistou
+                       clientes de inúmeros países com seus tratamentos exclusivos
+                        e totalmente naturais.
+                   </p>
+               </header>
+               <div class="cards grid">
+                   <div class="card">
+                       <i class="icon-woman"></i>
+                       <h3 class="title">Terapia Capilar</h3>
+                       <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                           Quos quia mollitia tempora magni perferendis voluptatem
+                            necessitatibus, accusamus ipsam est totam repellendus veritatis 
+                            vitae libero dolorem sed facere at ullam placeat.</p>
+                   </div>
+                   <div class="card">
+                       <i class="icon-scissors"></i>
+                       <h3 class="title">Cortes</h3>
+                       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                           Eveniet placeat tempora, libero pariatur iure vitae aperiam 
+                           voluptatem cumque quisquam sequi dolore corrupti cum doloribus 
+                           distinctio, atque labore aliquid necessitatibus corporis?</p>
+                   </div>
+                   <div class="card">
+                       <i class="icon-woman"></i>
+                       <h3 class="title">Tratamentos</h3>
+                       <p></p>
+                   </div>
+               </div>
+           </div>
+       </section>
     </main>
-    
+    <script src="script.js"></script>
 </body>
 </html>
