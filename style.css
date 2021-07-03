@@ -1,6 +1,6 @@
 /* Reset*/
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -127,7 +127,7 @@ body {
 }
 
 #header.scroll {
-    background: var(--base-color);
+    /*background: var(--base-color);*/
     box-shadow: 0px 2px 20px 40px rgba(0, 0, 0, 0.1);
 }
 
@@ -143,6 +143,9 @@ main {
 }   
 .logo span{
     color: var(--base-color);
+}
+.logo-alt span {
+    color: var(--body-color);
 }
 
 /*Navigation*/
@@ -168,7 +171,7 @@ nav ul li a:hover {
 }
 
 nav ul li a::after {
-    content: "";
+    content: '';
     width: 0%;
     height: 2px;
     background: var(--base-color);
@@ -177,7 +180,7 @@ nav ul li a::after {
     left: 0;
     bottom: -1.5rem;
 
-    transition: -1.5rem;
+    transition: width 0.2s;
 }
 
 nav ul li a:hover::after {
@@ -293,7 +296,7 @@ nav.show div.icon-x {
 
 #home .text p {
     margin-bottom: 2rem;
-    max-width: 100%;
+    /*max-width: 100%;*/
 }
 
 /* About*/
@@ -422,6 +425,11 @@ nav.show div.icon-x {
 
 }
 
+.swiper-pagination-bullet {
+    width: 0.75rem;
+    height: 0.75rem;
+}
+
 .swiper-pagination-bullet-active {
     background: var(--base-color); 
 }
@@ -452,4 +460,54 @@ nav.show div.icon-x {
 
 #contact ul li i {
     color: var(--base-color);
+}
+
+/*Footer*/
+footer {
+    background: var(--base-color);
+}
+
+footer .logo {
+    display: inline;
+    margin-bottom: 1.5rem;
+}
+
+footer .brand p{
+    color: var(--text-color-light);
+    margin-bottom: 0.75rem;
+}
+
+footer i {
+    font-size: 1.5rem;
+    color: var(--text-color-light);
+
+}
+
+footer .social a{
+    margin-right: 2rem;
+}
+
+/*Back to top*/
+.back-to-top {
+    background: var(--base-color);
+
+    position: fixed;
+    right: 1rem;
+    bottom: 1rem;
+
+    padding: 0.5rem;
+    clip-path: circle();
+
+    font-size: 1.5rem;
+    line-height: 0;
+
+    visibility: hidden;]
+    opacity: 0;
+
+    transition: 0.3s;
+}
+
+.back-to-top.show{
+    visibility: visible;
+    opacity: 1;
 }

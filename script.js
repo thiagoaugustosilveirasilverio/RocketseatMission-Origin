@@ -57,4 +57,8 @@ scrollReveal.reveal(
     #services header, #services .card,
     #testimonials header, #testimonials .testimonials,
     #contact .text, #contact .links
-    `, {interval:100})
+    `, { interval:100 } 
+    )
+
+    /*Botão voltar para o topo */
+const backToTopButton = document.querySelector('.back-to-top')
