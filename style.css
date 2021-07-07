@@ -138,7 +138,7 @@ body {
 
 #header.scroll {
     /*background: var(--base-color);*/
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.15);
 }
 
 /*Logo*/
@@ -172,7 +172,8 @@ nav ul li a {
     position: relative;
 }
 
-nav ul li a:hover {
+nav ul li a:hover,
+nav ul li a.active {
     color: var(--base-color); 
 }
 
@@ -189,8 +190,10 @@ nav ul li a::after {
     transition: width 0.2s;
 }
 
-nav ul li a:hover::after {
+nav ul li a:hover::after,
+nav ul li a.active::after {
     width: 100%;
+   
 }
 
 nav .menu {
@@ -353,7 +356,7 @@ nav.show div.icon-x {
 
 .card {
     padding: 3.625rem 2rem;
-    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.88);
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.8);
     border-bottom: 0.25rem solid var(--base-color);
     border-radius: 0.25rem 0.25rem 0 0;
     text-align: center;
@@ -558,7 +561,7 @@ footer .social a:hover {
     }
 
     .button {
-        height: 3.12rem;
+        height: 3.125rem;
     }
 
     /*navigation*/
@@ -575,6 +578,12 @@ footer .social a:hover {
 
     nav .menu ul li a.title {
         font: 400 1rem var(--body-font);
+        -webkit-font-smoothing: antialiased;
+    }
+
+    nav .menu ul li a.title.active {
+        font-weight: bold;
+        -webkit-font-smoothing: auto;
     }
 
     nav .icon-menu {
@@ -614,10 +623,40 @@ footer .social a:hover {
         grid-template-columns: 1fr 1fr 1fr;
     }
 
+    .card {
+        padding-right: 3rem;
+        padding-left: 3rem;
+    }
+
     /*testimonials*/
     #testimonials .container {
         margin-left: auto;
         margin-right: auto;
+    }
+
+    /*Contact*/
+    #contact .container {
+        grid-auto-flow: column;
+        align-items: center;
+    }
+
+    #contact .text {
+        max-width: 25rem;
+    }
+
+    /*footer*/
+    footer.section {
+        padding: 3.75rem 0;
+    }
+
+    footer .container {
+        grid-auto-flow: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    footer .logo {
+        font-size: 2.25rem;
     }
    
 }
