@@ -54,6 +54,7 @@ body {
     -webkit-font-smoothing: antialiased;
 
 }
+
 .title {
     font: 700 var(--title-font-size) var(--title-font);
     color: var(--title-color);
@@ -374,6 +375,23 @@ nav.show div.icon-x {
     margin-bottom: 0.75rem;
 }
 
+.card img {
+    width: 15rem;
+    height: 15rem;
+    object-fit: cover;
+    clip-path: circle();
+    margin-right: 0.5rem;
+}
+
+.card img {
+    transition: 0.3s;
+    display: inline-block;
+}
+
+.card img:hover {
+    transform: translateY(-5px);
+}
+
 /*Testimonials*/
 #testimonials {
     background: white;
@@ -577,7 +595,7 @@ footer .social a:hover {
     }
 
     nav .menu ul li a.title {
-        font: 400 1rem var(--body-font);
+        font: 600 1rem var(--body-font);
         -webkit-font-smoothing: antialiased;
     }
 
